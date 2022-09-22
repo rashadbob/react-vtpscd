@@ -1,0 +1,20 @@
+import React, { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import React, { Component } from 'react';
+import { render } from 'react-dom';
+
+import App from './App';
+
+
+const Title = () => {
+  return <h1>Register Form</h1>;
+}
+const rootElement = document.getElementById('root');
+const root = createRoot(rootElement);
+
+root.render(
+  <StrictMode>
+    <App />
+  </StrictMode>
+);
+
